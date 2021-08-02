@@ -1,0 +1,279 @@
+/* navigation ==============================================================*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--aa);
+    width: 50%;
+}
+
+nav , a {
+    text-decoration: none;
+    color: var(--a);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: px 0;
+    width: 100%;
+
+}
+
+/* home ==================================================================*/
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    background: var(--aa-) ;
+}
+#home {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: var(--aa);
+}
+
+/* header ==================================================================*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../Images/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--a);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: -1rem;
+}
+header p {
+    margin-bottom: 2em;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.buttonhaeder {
+    padding: 10px 30px;
+    font-size: .9rem ;
+    background-color: rgba(0, 0, 0, 0.205);
+    outline-width: 1px;
+    outline-style: groove;
+    outline-color: rgb(255, 255, 255);
+    margin-bottom: 2.5rem;
+}
+
+.buttonhaeder:hover {
+    background:rgba(0, 0, 0, 0.459);
+}
+/* info ===============================================*/
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 20px;
+    background-color:  var(--aa);
+    color: var(--a);
+}
+
+#info p {
+    margin-bottom: 2.5rem;
+    max-width: 1000px;
+    align-items: center;
+ }
+
+#info h2 {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
+#info h3 {
+    color: var(--aaa);
+    margin-top: 3rem;
+    margin-bottom: -2rem;
+}
+
+.buttoninfo {
+    padding: 10px 30px;
+    font-size: .9 ;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.205);
+    background-color: var(--aaa);
+    color: var(--aa);
+    margin-bottom: 3rem;
+}
+
+.buttoninfo:hover {
+    background-color: var(--aaa-);
+}
+
+
+/* operate ===============================================*/
+
+#operate {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:  var(--aaa);
+    color: var(--aa);
+}
+
+#operate h2 {
+    margin-top: -1.5rem;
+    font-size: 2.5rem;
+}
+
+#operate h3 {
+    font-size: 1.2rem;
+}
+
+.operatep {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.iconeoperate {
+    width: 15rem;
+    margin-top: -2rem;
+}
+
+/* contact===============================================*/
+
+#contact  {
+    padding-top: 2rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:  var(--aa);
+    color: var(--a);
+}
+
+#contact  h2 {
+    margin-bottom: -1rem;
+    font-size: 2.5rem;
+}
+
+.contact2 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.contact3 {
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* footer==================================================================*/
+
+footer {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1,3rem;
+}
+
+
+/* midia==================================================================*/
+
+@media screen and (min-width : 768px) {
+
+    /*nav*/
+
+    .logo {
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+        width: 20rem;
+        margin-left: -26rem;
+        padding: 0rem 0rem 0rem 10rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 1rem;
+        
+    }
+
+    nav ul {
+        Justify-content: left;
+        flex-direction: row;
+        width: 70%;
+        margin-right: -30rem;
+    }
+
+    /*haeder*/
+
+    header {
+        height: 600px;
+        height: 60vh;
+    }
+
+    /*Info*/
+
+    #info {
+        height: 800px;
+        height: 80vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*operate*/
+
+    #operate {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #operate h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #operate div {
+        flex-grow: 1;
+        flex-basis: 600px;
+        padding: 0 10px;
+    }
+
+    /*contact*/
+
+
+    iframe{
+        padding-left: 0vh;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}

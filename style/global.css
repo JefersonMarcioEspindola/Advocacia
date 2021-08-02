@@ -1,0 +1,30 @@
+/* Global =================================================================*/
+html{
+    
+    --a: #ffffff;
+    --aa: #000000;
+    --aa-: #00000000;
+    --aaa: #ffd000;
+    --aaa-: #b89600;
+    --aaaa:#3d3d3d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: var(--aaa);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0; 
+}
+
+i,li { list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0; 
+    font-style: normal;
+}
+
+
