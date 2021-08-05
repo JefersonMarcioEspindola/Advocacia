@@ -1,5 +1,32 @@
 /* navigation ==============================================================*/
+.top_bar{
+    width: 100%;
+    display: flex;
+    background-color: var(--aa);
+}
+.logo_image{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.buttons_nav{
+    width: 35%;
+    display: flex;
+}
+.buttons_nav_selection{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons_nav_selection a {
+    color: var(--a);
+}
+
+/*
 nav {
     display: flex;
     flex-direction: column;
@@ -31,6 +58,7 @@ nav ul li a {
     width: 100%;
 
 }
+*/
 
 /* home ==================================================================*/
 
@@ -39,12 +67,6 @@ nav ul li a {
     justify-content: center;
     width: 20rem;
     background: var(--aa-) ;
-}
-#home {
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: var(--aa);
 }
 
 /* header ==================================================================*/
