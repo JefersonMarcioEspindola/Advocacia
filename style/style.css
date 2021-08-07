@@ -1,6 +1,6 @@
 /* navigation ==============================================================*/
 .top_bar{
-
+    
     width: 100%;
     display: flex;
     background-color: var(--aa);
@@ -185,22 +185,36 @@ header p {
 }
 
 /* contact===============================================*/
-
-#contact  {
-    padding-top: 2rem;
+/*#contact {
+    
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    
+
+}*/
+.contacts{
+    width: 100%;
+    display: flex;
     background-color:  var(--aa);
     color: var(--a);
+    padding-top: 2rem;
+    text-align: left;
+    justify-content: space-between;
+    
+    
+}
+.contact_box{
+    margin-left: 5rem;
+
 }
 
 #contact  h2 {
     margin-bottom: -1rem;
     font-size: 2.5rem;
 }
+
 
 .contact2 {
     font-weight: 300;
@@ -212,6 +226,10 @@ header p {
     font-weight: 200;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.map_box{
+    margin-right: 5rem;
 }
 
 /* footer==================================================================*/
@@ -292,6 +310,7 @@ footer {
     }
 
     /*contact*/
+
 
 
     iframe{
