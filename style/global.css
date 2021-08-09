@@ -3,7 +3,6 @@ html{
     
     --a: #ffffff;
     --aa: #000000;
-    --aa-: #00000000;
     --aaa: #ffd000;
     --aaa-: #b89600;
     --aaaa:#3d3d3d;
@@ -26,5 +25,3 @@ i,li { list-style-type: none;
     padding:0; 
     font-style: normal;
 }
-
-

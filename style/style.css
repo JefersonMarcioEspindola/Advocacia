@@ -15,6 +15,7 @@ nav , a {
     color: var(--a);
     font-weight: 500;
     font-size: 18px;
+    background-color: var(--aa);
 }
 
 nav ul {
@@ -32,6 +33,14 @@ nav ul li a {
     padding: 0;
     width: 100%;
 
+}
+.buttontop {
+    padding: 1rem;
+}
+
+
+.buttontop:hover {
+    animation: text-pop-up-top 0.5s ease-out both;
 }
 
 /* home ==================================================================*/
@@ -67,12 +76,14 @@ header h1 {
     padding: 0;
     font-size: 3rem;
     font-weight: 700;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 header p {
     margin-top: -1rem;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 200;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 }
 
 .buttonhaeder {
@@ -83,6 +94,7 @@ header p {
     outline-style: groove;
     outline-color: rgb(255, 255, 255);
     margin-bottom: 2.5rem;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
 }
 
 .buttonhaeder:hover {
@@ -200,6 +212,34 @@ footer {
     font-size: 1,3rem;
 }
 
+/* animations Background===================================================*/
+
+
+/* animations Text=========================================================*/
+
+@keyframes text-pop-up-top {
+    0% {
+      transform: translateY(0);
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      transform: translateY(-5px);
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
 
 /* midia==================================================================*/
 
