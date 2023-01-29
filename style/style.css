@@ -1,13 +1,36 @@
 /* navigation ==============================================================*/
 
-nav {
-    width: 100%;
+#home {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: var(--fundo-principal);
+    color: white;
+    height: 120px;
+    justify-content: center;
+
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
     align-items: center;
-    background-color: var(--aa);
-    width: 70%;
+    width: 100px;
+}
+
+
+
+.home {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--fundo-principal);
+    justify-content: space-around;
+}
+
+.home nav {
+    width: 50%;
 }
 
 nav , a {
@@ -18,24 +41,23 @@ nav , a {
     background-color: var(--aa);
 }
 
+nav li {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
 nav ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    list-style: none;
     padding: 0;
-    width: 100%;
 }
 
-nav ul li a {
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-    width: 100%;
-
-}
 .buttontop {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
 }
 
 
@@ -43,19 +65,6 @@ nav ul li a {
     animation: text-pop-up-top 0.5s ease-out both;
 }
 
-/* home ==================================================================*/
-
-.logo {
-    align-items: center;
-    width: 20rem;
-    background: var(--aa-) ;
-}
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--aa);
-}
 
 /* header ==================================================================*/
 
@@ -63,89 +72,69 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../Images/background1.png);
-    background-size: cover;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../Images/background1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    color: var(--a);
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
 header h1 {
-    padding: 0;
-    font-size: 3rem;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 5rem;
+    font-family: 'Roboto Slab', serif;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 header p {
-    margin-top: -1rem;
-    margin-bottom: 1.5rem;
+    margin-top: -1.7rem;
     font-size: 1.3rem;
     font-weight: 200;
+    line-height: 2rem;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 }
 
-.buttonhaeder {
-    padding: 10px 30px;
-    font-size: .9rem ;
-    background-color: rgba(0, 0, 0, 0.205);
-    outline-width: 1px;
-    outline-style: groove;
-    outline-color: rgb(255, 255, 255);
-    margin-bottom: 2.5rem;
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
-}
-
-.buttonhaeder:hover {
-    background:rgba(0, 0, 0, 0.631);
-    transition: 0.7s;
-}
 /* info ===============================================*/
 
 #info {
+    background-color: var(--fundo-segundario);
+    color: #151515;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px 10px 20px 20px;
-    background-color:  var(--aa);
-    color: var(--a);
+    padding: 7rem 6rem;
 }
 
-#info p {
-    margin-bottom: 2.5rem;
-    max-width: 1000px;
-    align-items: center;
- }
+.info-texto {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
 
-#info h2 {
+.info-texto h2 {
     font-size: 2rem;
     margin-bottom: -1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
 }
 
-#info h3 {
-    color: var(--aaa);
-    margin-top: 3rem;
-    margin-bottom: -2rem;
+.info-texto span {
+    margin-top: 1.3rem;
+    width: 7rem;
+    border-color: var(--cor-principal);
+    border-style: solid;
 }
 
-.buttoninfo {
-    padding: 10px 30px;
-    font-size: .9rem ;
-    outline-width: 1px;
-    outline-style: groove;
-    outline-color: var(--aaa);
-    margin-bottom: 2.5rem;
-    position: relative;
-    overflow: hidden;
+.info-foto{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.buttoninfo:hover {
-    color: var(--aa);
-    background-color: var(--aaa);
-    transition: 0.7s;
+.info-foto img {
+    width: 80%;
 }
-
 
 /* operate ===============================================*/
 
@@ -246,14 +235,6 @@ footer {
 
     /*nav*/
 
-    .logo {
-        align-items: left;
-        justify-content: left;
-        text-align: left;
-        width: 20rem;
-
-    }
-
     nav {
         align-items: center;
         flex-direction: row;
@@ -278,9 +259,7 @@ footer {
     }
 
     header h1 {
-        padding-top: 3rem;
         font-size: calc(3em + 3vh);
-        padding-bottom: 0rem;
     }
 
     header p {
@@ -296,8 +275,6 @@ footer {
     /*Info*/
 
     #info {
-        height: 1000px;
-        height: 100vh;
         justify-content: center;
         min-height: 250px;
     }
