@@ -4,6 +4,7 @@ html{
     --fundo-segundario: #f5f5f5;
     --fundo-principal: #141414;
     --cor-principal: #f5be27;
+    --cor-texto: #151515;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     padding:0; 
 }
 
-i,li { 
+i,li,a{ 
     list-style-type: none;
     list-style-position:inside;
     margin:0;

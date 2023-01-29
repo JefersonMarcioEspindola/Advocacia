@@ -45,8 +45,8 @@ nav a {
 
 
 .buttontop:hover {
-    animation: text-pop-up-top 0.5s ease-out both;
-}
+    color: var(--cor-principal);
+} 
 
 
 /* header ==================================================================*/
@@ -87,6 +87,7 @@ header p {
     justify-content: center;
     align-items: center;
     padding: 7rem 6rem;
+
 }
 
 .info-texto {
@@ -128,55 +129,140 @@ header p {
 /* operate ===============================================*/
 
 #operate {
-    background-image: url(../Images/background1.png);
-    color: var(--a);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../Images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 1rem;
 }
 
 #operate h2 {
-    margin-top: -1.5rem;
-    font-size: 2.5rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
 }
 
-#operate p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-.iconeoperate {
-    width: 15rem;
-    margin-top: 1rem;
+#operate .line {
+    margin: 1rem;
+    width: 11rem;
+    border-color: var(--cor-principal);
+    border-style: solid;
 }
 
+.cards {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 500px);
+    padding: 1rem;
+    justify-content: center;
+    justify-items: center;
 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+}
+
+.card img {
+    width: 7rem;
+    padding: 1rem;
+}
+
+.card span {
+    font-family: 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+/* mvv===================================================*/
+
+#mvv {
+    background-color: var(--fundo-segundario);
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mvv {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mvv h2 {
+    margin: 0;
+    font-size: 3rem;
+    margin-bottom: -1rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+#mvv p {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+    color: #707070;
+    text-align: center;
+}
+
+#mvv span {
+    margin-top: 1.3rem;
+    width: 7rem;
+    border-color: var(--cor-principal);
+    border-style: solid;
+}
 
 /* contact===============================================*/
 
 #contact  {
-    padding-top: 2rem;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color:  var(--aa);
-    color: var(--a);
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:  var(--fundo-principal);
+    color: white;
 }
 
-#contact  h2 {
-    margin-bottom: -1rem;
-    font-size: 2.5rem;
+.contact-info  p {
+    margin-top: 1.4rem;
+    margin-bottom: 0;
+    font-size: 2rem;
 }
 
-.contact2 {
-    font-weight: 300;
-    font-size: 1rem;
-    padding-bottom: 0.5rem;
+.contact-info li,i {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
 }
 
-.contact3 {
-    font-weight: 200;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.contact-info .social-midia {
+    display: flex;
+    flex-direction: row;
+}
+
+.smicon {
+    margin-left: 10px;
+    margin-top: 2rem;
+}
+
+.smicon:first-child {
+    margin: 1.3rem -10px -10px -10px;
+
 }
 
 /* footer==================================================================*/
@@ -192,19 +278,6 @@ footer {
 
 /* animations Text=========================================================*/
 
-@keyframes text-pop-up-top {
-    0% {
-      transform: translateY(0);
-      transform-origin: 50% 50%;
-      text-shadow: none;
-    }
-    100% {
-      transform: translateY(-5px);
-      transform-origin: 50% 50%;
-      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-    }
-  }
-
 @keyframes text-focus-in {
     0% {
       filter: blur(12px);
@@ -216,8 +289,4 @@ footer {
     }
   }
 
-/* midia===============================
-
-@media screen and (min-width : 750px) {}
-
-===================================*/
+/* midia==================================================================*/
