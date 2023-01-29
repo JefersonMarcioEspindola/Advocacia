@@ -11,7 +11,7 @@ html{
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    background-color: var(--aaa);
+    /* background-color: var(--aaa);*/
     background-repeat: no-repeat;
     flex-direction: column;
     flex-wrap: wrap;
