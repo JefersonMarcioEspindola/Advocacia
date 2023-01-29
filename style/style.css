@@ -71,11 +71,10 @@ nav ul {
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../Images/background1.jpg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 20px;
@@ -84,7 +83,7 @@ header {
 header h1 {
     font-weight: 500;
     line-height: 5rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Times New Roman', serif;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 header p {
@@ -115,7 +114,7 @@ header p {
 .info-texto h2 {
     font-size: 2rem;
     margin-bottom: -1rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Times New Roman', serif;
     font-weight: 500;
 }
 
