@@ -303,75 +303,95 @@ footer {
 
 /* midia==================================================================*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
-        /*Info*/
+    /*nav*/
 
-        #info {
-            width: 100%;
-            padding: 0;
+    .home {
+        width: 90%;
+    }
 
-        }
+    .home nav {
+        width: 70%;
+    }
 
-        .info-texto {
-            padding-left: 4rem;
-            width: 100%;
-            padding-bottom: 5rem;
+    .home nav ul {
+        padding: 0px;
+        justify-content: space-around;
+    }
 
-        }
+   .logo {
+        width: 70%;
+    }
 
-        .info-texto h2 {
-            padding-top: 5rem;
-            margin: 0;
 
-        }
+    /*Info*/
 
-        .info-texto p {
-            font-weight: 1.3rem;
-        }
+    #info {
+        width: 100%;
+        padding: 0;
 
-        .info-foto {
-            margin: 3rem 0 2rem;
-            width: 100%;
-            justify-content: center;
-        }
-        
+    }
+
+    .info-texto {
+        padding-left: 4rem;
+        width: 100%;
+        padding-bottom: 5rem;
+
+    }
+
+    .info-texto h2 {
+        padding-top: 5rem;
+        margin: 0;
+
+    }
+
+    .info-texto p {
+        font-weight: 1.3rem;
+    }
+
+    .info-foto {
+        margin: 3rem 0 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+
 
     #operate{
-        width: 100%;
-        padding: 5rem 0;
-        justify-content: center;
+    width: 100%;
+    padding: 5rem 0;
+    justify-content: center;
     }
 
     .cards {
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: repeat(2,350px);
-        padding: 1rem;
-        justify-content: center;
-        justify-items: center;
-    
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,350px);
+    padding: 1rem;
+    justify-content: center;
+    justify-items: center;
+
     }
-    
+
     /*mvv*/
 
     .mvv {
-        padding: 7rem 5;
+    padding: 7rem 5rem;
     }
 
     .mvv h2{
-        text-align: center;
+    text-align: center;
     }
 
     iframe {
-        width: 100%;
-        height: 315px;
+    width: 100%;
+    height: 315px;
     }
 
     /*contact*/
 
     .logobutton {
-        margin: 0;
+    margin: 0;
     }
 
 }
