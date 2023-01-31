@@ -356,6 +356,7 @@ footer {
         justify-content: center;
     }
 
+    /*operate*/
 
     #operate{
     width: 100%;
@@ -398,166 +399,166 @@ footer {
 
 @media only screen and (max-width: 769px) {
 
-        /*nav*/
+    /*nav*/
 
-        #home div {
-            padding-top: .5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
-
-        .home ul {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            padding: 0;
-        }
-
-        .home a {
-            font-size: 18px;
-        }
-
-        .logo {
-            display: flex;
-            width: 60%;
-            justify-content: center;
-            align-items: center;
-
-        }
-    
-        /*haeder*/
+    #home div {
+        padding-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
-        .inicio h1 {
-            padding-top: 9rem;
-            font-size: 3.5rem;
-            line-height: 3.5rem;
-        }
+    }
 
-        .inicio p {
-            padding-bottom: 9rem;
-            font-size: 1.3rem;
-            line-height: 1.7rem;
-        }
+    .home ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .home a {
+        font-size: 18px;
+    }
+
+    .logo {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /*haeder*/
     
-        /*Info*/
+    .inicio h1 {
+        padding-top: 9rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .inicio p {
+        padding-bottom: 9rem;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    /*Info*/
+
+    #info {
+        flex-direction: column;
+
+    }
+
+    .info-texto {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .info-texto h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-texto span {
+        margin: 1rem;
+    }
+
+    .info-texto p {
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+        text-align: center;
+        font-weight: 1.3rem;
+    }
+
+    .info-foto {
+        margin: 3rem 0 7rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /*operate*/
+
+    #operate {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #operate h2 {
+        display: flex;
+        text-align: center;
+
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,300px);
+    }
+
+    /*mvv*/
     
-        #info {
-            flex-direction: column;
+    #mvv {
+        padding: 0;
+    }
 
-        }
+    #mvv h2 {
+        display: flex;
+        justify-content: center;
+    }
 
-        .info-texto {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0;
-        }
+    .mvv {
+        padding-top: 7rem;
+    }
 
-        .info-texto h2 {
-            display: flex;
-            justify-content: center;
-        }
+    .mvv span {
+        margin: 1rem;
+    }
 
-        .info-texto span {
-            margin: 1rem;
-        }
+    .mvv p {
+        margin: 0;
+        text-align: center;
+    }
 
-        .info-texto p {
-            margin: 0;
-            padding: 0 2rem 0 2rem;
-            text-align: center;
-            font-weight: 1.3rem;
-        }
-
-        .info-foto {
-            margin: 3rem 0 7rem;
-            width: 100%;
-            justify-content: center;
-        }
+    /*contact*/
     
-        /*operate*/
+    #contact {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+    }
 
-        #operate {
-            justify-content: center;
-            align-items: center;
-        }
+    .logobutton {
+        margin-top: 2rem;
+        width: 60%;
+    }
+    
 
-        #operate h2 {
-            display: flex;
-            text-align: center;
+    .contacticone{
+        justify-content: center;
+        align-items: center;
+    }
 
-        }
+    #contact p {
+        font-size: 25px;
+        margin-bottom: 1.5rem;
+    }
 
-        .cards {
-            grid-template-columns: repeat(1,300px);
-        }
+    #contact a, i {
+        font-size: 18px;
+        margin: 0;
+    }
 
-        /*mvv*/
-        
-        #mvv {
-            padding: 0;
-        }
+    .social-midia {
+        margin-bottom: 2rem;
+        justify-content: center
+    }
 
-        #mvv h2 {
-            display: flex;
-            justify-content: center;
-        }
-
-        .mvv {
-            padding-top: 7rem;
-        }
-
-        .mvv span {
-            margin: 1rem;
-        }
-
-        .mvv p {
-            margin: 0;
-            text-align: center;
-        }
-
-        /*contact*/
-        
-        #contact {
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            width: 100%;
-            padding: 0px;
-        }
-
-        .logobutton {
-            margin-top: 2rem;
-            width: 60%;
-        }
-        
-
-        .contacticone{
-            justify-content: center;
-            align-items: center;
-        }
-
-        #contact p {
-            font-size: 25px;
-            margin-bottom: 1.5rem;
-        }
-
-        #contact a, i {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        .social-midia {
-            margin-bottom: 2rem;
-            justify-content: center
-        }
-
-        iframe {
-            width: 90%;
-            height: 250px;
-            margin-bottom: 2rem;
-        }
+    iframe {
+        width: 90%;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
 }
